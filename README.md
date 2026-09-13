@@ -1,4 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Makers Academy
+
+AI Makers Academy is an online school for learning to build with AI. It's a
+Next.js (App Router + TypeScript + Tailwind CSS) web application modeled after
+edX's course-marketplace layout: a hero section, featured courses, a full
+course catalog, and individual course detail pages.
+
+## Courses
+
+- AI Coding for iPhone Apps
+- AI Coding for Android Apps
+- AI Coding for Web Applications
+- AI Coding for Video Games
+- AI Video Creation
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org/) (App Router, Turbopack, Server Components)
+- TypeScript
+- Tailwind CSS v4
+- [lucide-react](https://lucide.dev/) for icons
+
+## Project Structure
+
+```
+src/
+  app/
+    layout.tsx          Root layout (Navbar + Footer wrapper)
+    page.tsx             Home page (hero, course grid, formats, CTA)
+    courses/
+      page.tsx            Course catalog (all courses)
+      [slug]/page.tsx      Individual course detail page
+  components/
+    Navbar.tsx
+    Footer.tsx
+    CourseCard.tsx
+  data/
+    courses.ts            Course content (single source of truth)
+  lib/
+    course-icons.ts        Maps course "icon" field to a lucide-react icon
+  types/
+    course.ts              Course TypeScript types
+```
+
+To add or edit a course, update [src/data/courses.ts](src/data/courses.ts) —
+every page (home, catalog, and detail pages) is generated from that file.
 
 ## Getting Started
 
@@ -6,19 +51,27 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts:
+
+```bash
+npm run build   # production build
+npm run start   # run the production build
+npm run lint    # lint the project
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Notes
+
+- The navbar currently uses a placeholder logo mark (a gradient square icon).
+  Swap it out in [src/components/Navbar.tsx](src/components/Navbar.tsx) once
+  the real AI Makers Academy logo is ready.
+- "Sign In" and "Enroll Now" links are placeholders — no auth or payments are
+  wired up yet.
 
 ## Learn More
 
