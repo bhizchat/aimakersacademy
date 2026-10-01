@@ -66,6 +66,11 @@ export default function Footer() {
                   Medi Support
                 </Link>
               </li>
+              <li>
+                <Link href="/medi/privacy-policy" className="hover:text-white">
+                  Medi Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
