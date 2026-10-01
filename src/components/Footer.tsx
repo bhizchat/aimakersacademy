@@ -56,6 +56,16 @@ export default function Footer() {
                   The Course
                 </Link>
               </li>
+              <li>
+                <Link href="/medi" className="hover:text-white">
+                  Medi App
+                </Link>
+              </li>
+              <li>
+                <Link href="/medi/support" className="hover:text-white">
+                  Medi Support
+                </Link>
+              </li>
             </ul>
           </div>
 
