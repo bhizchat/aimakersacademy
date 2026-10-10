@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-5">
           <div className="col-span-2 sm:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -56,6 +56,12 @@ export default function Footer() {
                   The Course
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white">Products</h4>
+            <ul className="mt-3 space-y-2 text-sm">
               <li>
                 <Link href="/medi" className="hover:text-white">
                   Medi App
@@ -69,6 +75,24 @@ export default function Footer() {
               <li>
                 <Link href="/medi/privacy-policy" className="hover:text-white">
                   Medi Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/businessos" className="hover:text-white">
+                  BusinessOS App
+                </Link>
+              </li>
+              <li>
+                <Link href="/businessos/support" className="hover:text-white">
+                  BusinessOS Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/businessos/privacy-policy"
+                  className="hover:text-white"
+                >
+                  BusinessOS Privacy Policy
                 </Link>
               </li>
             </ul>
