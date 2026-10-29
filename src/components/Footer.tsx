@@ -95,6 +95,14 @@ export default function Footer() {
                   BusinessOS Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/businessos/delete-account"
+                  className="hover:text-white"
+                >
+                  Delete BusinessOS Account
+                </Link>
+              </li>
             </ul>
           </div>
 
